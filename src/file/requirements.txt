@@ -1,0 +1,5 @@
+class:14,number_of_teachers:1,subjects:1,
+class:1,number_of_teachers:1,subjects:1,
+Name:eric,Subject:Math,Class:1,Training_Status:No,
+Name:connor,Subject:Math,Class:2,Training_Status:No,
+Name:wendy,Subject:Math,Class:2,Training_Status:Yes,
