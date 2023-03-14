@@ -9,6 +9,7 @@ public class Command {
         System.out.println("Please enter your role (director or administrator):");
         String role = scanner.nextLine();
         Operation operation = Factory.createOperation(role);
+
         if (operation != null) {
             do {
                 operation.execute();

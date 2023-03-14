@@ -45,22 +45,21 @@ public class AdministratorOperation extends Operation {
         switch (choice) {
             case 1:
                 // Print the requirements file
-                for (Map<String, String> map : requirements) {
-                    for (Map.Entry<String, String> entry : map.entrySet()) {
-                        System.out.println(entry.getKey() + " " + entry.getValue());
-                    }
-                    System.out.println();
+                if (requirements.isEmpty()){
+                    System.out.println("Temporarily there is no requirement for teachers!");
+                    break;
                 }
+                printFile(requirements);
+
                 break;
 
             case 2:
                 // Print the teacher information file
-                for (Map<String, String> map : teachers) {
-                    for (Map.Entry<String, String> entry : map.entrySet()) {
-                        System.out.println(entry.getKey() + " " + entry.getValue());
-                    }
-                    System.out.println();
+                if (teachers.isEmpty()){
+                    System.out.println("Temporarily there is no teacher information!");
+                    break;
                 }
+                printFile(teachers);
                 break;
 
             case 3:

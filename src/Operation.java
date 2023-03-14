@@ -65,7 +65,22 @@ public abstract class Operation {
     }
 
     /**
+     * This method is used to print the content of document
+     * @param list a list of map, each map is a line of the file.
+     */
+    public void printFile(List<Map<String,String>> list) {
+        for (Map<String, String> map : list) {
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + " " + entry.getValue());
+            }
+            System.out.println();
+        }
+    }
+
+    /**
      * This method is used to execute the operation.
      */
     public abstract void execute();
+
+
 }

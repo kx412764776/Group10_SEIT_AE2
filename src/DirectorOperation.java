@@ -41,12 +41,13 @@ public class DirectorOperation extends Operation{
 
             case 1:
                 // Traversal the requirements list and print the data.
-                for (Map<String, String> map : requirements) {
-                    for (Map.Entry<String, String> entry : map.entrySet()) {
-                        System.out.println(entry.getKey() + " " + entry.getValue());
-                    }
-                    System.out.println();
+                // 1.1 If there is no content in the file, return reminder.
+                if (requirements.isEmpty()){
+                    System.out.println("Temporarily there is no requirement for teachers!");
+                    break;
                 }
+                // 1.2 Output the contents of requirements.
+                printFile(requirements);
                 break;
 
             case 2:
