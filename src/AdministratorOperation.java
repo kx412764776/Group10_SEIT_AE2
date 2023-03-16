@@ -7,6 +7,7 @@ import java.util.*;
  * Administrator can read the requirements file and teacher information file.
  */
 public class AdministratorOperation extends Operation {
+
     private List<Map<String, String>> teachers;
     private List<Map<String, String>> requirements;
 

@@ -20,7 +20,7 @@ public class DirectorOperation extends Operation{
         try {
             requirements = readFile("requirements");
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: file not found.");
         }
     }
 
